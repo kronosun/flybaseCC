@@ -1,21 +1,21 @@
 module.exports = {
 	// Twilio API keys
 	twilio: {
-		sid: "ACc20560317de178536db23ff785244bf2",
-		token: "d268c1fcd7389c6a5e9daa0d86401f16",
-		appid: 'APfa1cac5e96a96aae4146139d4c70f191',
-		fromNumber : "+33975183826",
+		sid: process.env.SID,
+		token: process.env.TOKEN,
+		appid: process.env.APPID,
+		fromNumber : process.env.FROMNUM,
 		welcome : "Merci de votre appel.",
 		hangup : false,
-		queueName: "flybase-muv0x",
-		dqueueurl:"https://flybase-muv0x.herokuapp.com/voice"
+		queueName: process.env.QUEUENAME,
+		dqueueurl: process.env.APPURL
 	},
 	//	Flybase settings
 	flybase: {
-		api_key: "948e5b18-290b-434f-95f1-9f2108e2b679",
-		app_name: "muv0x"
+		api_key: process.env.FLYKEY,
+		app_name: process.env.FLYNAME
 	},
 	//	Username and password for admin section.
-	un: 'voxadmin',
-	pw: 'Muv0x@31337!'
+	un: process.env.ADMIN,
+	pw: process.env.PASS
 };
