@@ -7,7 +7,7 @@ module.exports = {
 		fromNumber : "+33975183826",
 		welcome : "Merci de votre appel.",
 		hangup : false,
-		queueName: "b0tacd",
+		queueName: "flybase-muv0x",
 		dqueueurl:"https://flybase-muv0x.herokuapp.com/voice"
 	},
 	//	Flybase settings
